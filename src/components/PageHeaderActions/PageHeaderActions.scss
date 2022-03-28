@@ -1,0 +1,45 @@
+@import "../../theme.scss";
+
+.page-header-actions {
+  margin: 0 1vw;
+
+  &__icon {
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+    cursor: pointer;
+
+    &--focused {
+      fill: $color-white;
+    }
+  }
+
+  &__overlay {
+    width: 40vw;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 60px 20px;
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    background-color: $color-red;
+
+    &:not(&--focused) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .page-header-actions__mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .page-header-actions__web {
+    display: none;
+  }
+}

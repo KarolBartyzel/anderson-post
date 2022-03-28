@@ -1,0 +1,90 @@
+@import "../../theme.scss";
+
+.article-item {
+  display: flex;
+
+  &:not(:first-child) {
+    padding-top: 20px;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 20px;
+  }
+
+  border-bottom: 1px solid $color-lightgray;
+  justify-content: space-between;
+  align-items: center;
+
+  &--first {
+    flex-direction: column;
+  }
+
+  &--reversed {
+    flex-direction: row-reverse;
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__source {
+    font-size: 11px;
+    margin: 16px 0 4px 0;
+    color: $color-red;
+  }
+
+  &__title {
+    font-size: 18px;
+    margin: 4px 0 8px 0;
+  }
+
+  &__description {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  &__author {
+    color: $color-darkgray;
+    font-size: 14px;
+    &::after {
+      content: "\2022";
+      margin-left: 2px;
+    }
+  }
+
+  &__time {
+    margin-left: 2px;
+    color: $color-darkgray;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .article-item {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .article-item {
+    &__image {
+      &:not(&--first) {
+        width: calc(50% - 20px);
+        height: 146px;
+      }
+    }
+
+    &__details {
+      &:not(&--first) {
+        width: calc(50% - 20px);
+      }
+    }
+
+    &__title {
+      &--first {
+        font-size: 24px;
+      }
+    }
+  }
+}

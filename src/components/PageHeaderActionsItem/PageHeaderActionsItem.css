@@ -1,0 +1,16 @@
+.page-header-actions-item {
+  margin: 0 1vw;
+  font-size: 14px; }
+  .page-header-actions-item--contained {
+    background-color: #f02f23;
+    color: #fff;
+    border-radius: 50px;
+    padding: 4px 16px; }
+
+@media screen and (max-width: 1000px) {
+  .page-header-actions-item {
+    width: 100%;
+    padding: 1.5vh;
+    color: #fff; }
+    .page-header-actions-item:not(:last-child) {
+      border-bottom: 1px solid #fff; } }

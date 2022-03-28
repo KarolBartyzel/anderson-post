@@ -1,0 +1,19 @@
+@import "../../theme.scss";
+
+.load-more {
+  display: flex;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color-red;
+  padding: 4px 16px;
+  border: 1px solid $color-red;
+  border-radius: 50px;
+  margin: 24px auto;
+
+  &--disabled {
+    color: $color-darkgray;
+    border-color: $color-darkgray;
+    cursor: default;
+  }
+}

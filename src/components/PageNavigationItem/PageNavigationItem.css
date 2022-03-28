@@ -1,0 +1,6 @@
+.page-navigation-item {
+  margin: 4px 8px;
+  font-size: 14px; }
+  .page-navigation-item--current {
+    color: #f02f23;
+    text-decoration: underline; }

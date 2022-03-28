@@ -1,0 +1,30 @@
+.page-header-actions {
+  margin: 0 1vw; }
+  .page-header-actions__icon {
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+    cursor: pointer; }
+    .page-header-actions__icon--focused {
+      fill: #fff; }
+  .page-header-actions__overlay {
+    width: 40vw;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 60px 20px;
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    background-color: #f02f23; }
+    .page-header-actions__overlay:not(.page-header-actions__overlay--focused) {
+      display: none; }
+
+@media screen and (min-width: 1000px) {
+  .page-header-actions__mobile {
+    display: none; } }
+
+@media screen and (max-width: 1000px) {
+  .page-header-actions__web {
+    display: none; } }

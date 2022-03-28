@@ -1,0 +1,15 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin: 20px calc(15px + 2vw); }
+  .page-header .page-header__title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%); }
+
+@media screen and (max-width: 1000px) {
+  .page-header {
+    display: flex;
+    justify-content: space-between; } }

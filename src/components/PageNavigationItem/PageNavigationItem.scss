@@ -1,0 +1,11 @@
+@import "../../theme.scss";
+
+.page-navigation-item {
+  margin: 4px 8px;
+  font-size: 14px;
+
+  &--current {
+    color: $color-red;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,15 @@
+.load-more {
+  display: flex;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f02f23;
+  padding: 4px 16px;
+  border: 1px solid #f02f23;
+  border-radius: 50px;
+  margin: 24px auto; }
+
+.load-more--disabled {
+  color: #7c7c7c;
+  border-color: #7c7c7c;
+  cursor: default; }

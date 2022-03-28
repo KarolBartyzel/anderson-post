@@ -1,0 +1,24 @@
+@import "../../theme.scss";
+
+.page-header-actions-item {
+  margin: 0 1vw;
+  font-size: 14px;
+
+  &--contained {
+    background-color: $color-red;
+    color: $color-white;
+    border-radius: 50px;
+    padding: 4px 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .page-header-actions-item {
+    width: 100%;
+    padding: 1.5vh;
+    color: $color-white;
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-white;
+    }
+  }
+}
